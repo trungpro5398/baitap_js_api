@@ -27,7 +27,7 @@
   margin-bottom: 50px;
 }
 
-.product .row {
+.product .row1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,26 +35,26 @@
       flex-wrap: wrap;
 }
 
-.product .row .col {
+.product .row1 .col1 {
   width: calc(90% / 3);
   margin-right: 20px;
   margin-bottom: 30px;
   border: 2px solid;
 }
 
-.product .row .col .item img {
+.product .row1 .col1 .item img {
   width: 100%;
   height: 70%;
   margin-bottom: 10px;
 }
 
-.product .row .col .item p {
+.product .row1 .col1 .item p {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
-.product .row .col .item button {
+.product .row1 .col1 .item button {
   width: 100%;
   background-color: #28a745;
   color: #fff;

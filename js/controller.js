@@ -1,17 +1,19 @@
 export const renderProducts = (products) => {
   let contentHTML = "";
   products.forEach((product) => {
-    contentHTML += `<div class="col">
+    contentHTML += `<div class="col1">
     <div class="item">
       <img src="${product.image}" alt="" />
       <p>
        ${product.description}
       </p>
       <button class="cart" onclick="addToCart(${product.id})">Cart</button>
+      <button class="delete" onclick="xoaSanPham(${product.id})">Delete</button>
+      <button class="edit" onclick="layThongTinChiTiet(${product.id})">Edit</button>
     </div>
   </div>`;
   });
-  document.querySelector(".row").innerHTML = contentHTML;
+  document.querySelector(".row1").innerHTML = contentHTML;
 };
 
 export const optionSelect = (products, state) => {
