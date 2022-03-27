@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>Mua hàng Online</h1>
+      </div>
+    </header>
+    <section class="searchEngine">
+      <div class="container">
+        <label for="filter">Select:</label>
+        <select name="filter" id="filter">
+          <option value="none">none</option>
+          <option value="iphone">iphone</option>
+          <option value="samsung">samsung</option>
+        </select>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+    <section class="cart">
+      <div class="container">
+        <header class="header">
+          <h1>Giỏ Hàng</h1>
+        </header>
+        <table class="infoCart">
+          <thead>
+            <tr>
+              <th>Hình ảnh</th>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Tổng cộng</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="checkOut">
+      <div class="container">
+        <div class="list" id="list">
+          <p>Tổng Tiền</p>
+          <span>0$</span>
+          <button>Thanh Toán</button>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
